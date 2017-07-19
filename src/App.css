@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-grid {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  transition: .5s;
+}
+
+.container-grid:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+.tile:hover {
+  background: azure;
+}
+
+.tile {
+  border: 2px solid brown;
+  height: 32.4%;
+  width: 32.2%;
+  font-size: 40px;
+  float: left;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  color: #aaa;
+  background: #eee;
+}
+
+.tile p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -120%);
+}
+
+.p-0, .p-1, .p-2 {
+  border-top: none;
+}
+
+.p-0, .p-3, .p-6 {
+  border-left: none;
+}
+
+.p-6, .p-7, .p-8 {
+  border-bottom: none;
+}
+
+.p-2, .p-5, .p-8 {
+  border-right: none;
+}
+
+button {
+  border: none;
+  background: whitesmoke;
+  padding: 3px 5px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, .5);
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
